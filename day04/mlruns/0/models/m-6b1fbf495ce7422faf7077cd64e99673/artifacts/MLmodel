@@ -1,0 +1,34 @@
+artifact_path: file:C:/Users/NAVEEN VARMA/Downloads/mlflow/day04/mlruns/0/models/m-6b1fbf495ce7422faf7077cd64e99673/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.skops
+    predict_fn: predict
+    python_version: 3.12.10
+  sklearn:
+    code: null
+    pickled_model: model.skops
+    serialization_format: skops
+    sklearn_version: 1.9.1
+    skops_trusted_types:
+    - sklearn.tree._tree.Tree
+is_signature_from_type_hint: false
+mlflow_version: 3.16.1
+model_id: m-6b1fbf495ce7422faf7077cd64e99673
+model_size_bytes: 940376
+model_uuid: m-6b1fbf495ce7422faf7077cd64e99673
+prompts: null
+run_id: 4ff00c378c4e482b94882f2b49ebd451
+saved_input_example_info:
+  artifact_path: input_example.json
+  serving_input_path: serving_input_example.json
+  type: ndarray
+signature:
+  inputs: '[{"type": "tensor", "tensor-spec": {"dtype": "float64", "shape": [-1, 4]}}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "int64", "shape": [-1]}}]'
+  params: null
+type_hint_from_example: false
+utc_time_created: '2026-10-05 14:00:08.111860'
